@@ -7,6 +7,8 @@ dotenv.config();
 
 const app = express();
 
+console.log('MONGODB_URI from env:', process.env.MONGODB_URI);
+
 // Middleware
 app.use(cors());
 app.use(express.json());
